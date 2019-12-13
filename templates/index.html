@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Pembacaan Sensor</title>
+</head>
+<body>
+<h1>Stats</h1>
+<h2>Jumlah stats = {{ jumlah_stats }}</h2>
+<ol>
+    {% for stat in stats %}
+    <li>Temperature={{stat.temperature}}, humidity={{ stat.humidity}}</li>
+    {% endfor %}
+</ol>
+</body>
+</html>
